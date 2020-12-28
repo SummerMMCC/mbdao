@@ -1,0 +1,44 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: common
+  # 环境 dev|test|prod   dev:开发环境     test:测试环境     prod:生产环境
+  profiles:
+    active: dev
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources: # 指定静态资源的路径
+    static-locations: classpath:/static/, classpath:/public/
+  jpa:
+    generate-ddl: true
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL57Dialect
+          current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+#配置日志
+logging:
+  #file: ./logs/logger.log
+  level:
+    root: info
+    #不同目录下的日志可配置不同级别
+    org.springfromework.web: INFO
+    org.hibernate: ERROR
+
+
