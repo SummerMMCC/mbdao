@@ -1,5 +1,6 @@
 /Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/mapper/BaseMapper.java
 /Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/util/Constants.java
 /Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/util/LocalStringUtil.java
+/Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/util/AutoMapper.java
 /Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/util/LocalObjectUtil.java
 /Volumes/MMD/java/mbdao/src/main/java/com/mmc/mbdao/entity/BaseEntity.java

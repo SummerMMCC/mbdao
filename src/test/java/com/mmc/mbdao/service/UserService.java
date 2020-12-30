@@ -5,7 +5,6 @@ import com.mmc.mbdao.dao.BaseDao;
 import com.mmc.mbdao.dto.UserDto;
 import com.mmc.mbdao.entity.BaseEntity;
 import com.mmc.mbdao.entity.UserEntity;
-import com.mmc.mbdao.mapper.BaseMapper;
 import com.mmc.mbdao.mapper.UserMapper;
 import com.mmc.mbdao.util.AutoMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -55,6 +54,6 @@ public class UserService<E extends BaseEntity> {
 
         AutoMapper.mapping(ud, u);
 
-        userMapper.insertSelective(u);
+//        userMapper.insertSelective(u);
     }
 }

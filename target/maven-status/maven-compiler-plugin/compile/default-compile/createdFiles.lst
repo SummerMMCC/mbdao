@@ -7,3 +7,4 @@ com/mmc/mbdao/mapper/BaseMapper.class
 com/mmc/mbdao/util/Constants$Num$IntNum.class
 com/mmc/mbdao/util/Constants.class
 com/mmc/mbdao/util/LocalObjectUtil.class
+com/mmc/mbdao/util/AutoMapper.class
