@@ -1,12 +1,12 @@
 package com.mmc.mbdao.service;
 
+import com.mmc.common.base.util.AutoMapper;
 import com.mmc.mbdao.Application;
 import com.mmc.mbdao.dao.BaseDao;
 import com.mmc.mbdao.dto.UserDto;
 import com.mmc.mbdao.entity.BaseEntity;
 import com.mmc.mbdao.entity.UserEntity;
 import com.mmc.mbdao.mapper.UserMapper;
-import com.mmc.mbdao.util.AutoMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RunWith(SpringRunner.class)

@@ -4,7 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import java.sql.Date;
+import java.util.Date;
 
 @MappedSuperclass
 public class BaseEntity {
@@ -14,7 +14,7 @@ public class BaseEntity {
     private Long id;
     private String name;
     private String note;
-    private String create_user;
+    private Long create_user;
     private Date create_time;
     private String update_user;
     private Date update_time;
@@ -44,11 +44,11 @@ public class BaseEntity {
         this.note = note;
     }
 
-    public String getCreate_user() {
+    public Long getCreate_user() {
         return create_user;
     }
 
-    public void setCreate_user(String create_user) {
+    public void setCreate_user(Long create_user) {
         this.create_user = create_user;
     }
 

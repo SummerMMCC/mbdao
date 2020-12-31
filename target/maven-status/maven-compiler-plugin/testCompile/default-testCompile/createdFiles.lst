@@ -7,7 +7,6 @@ com/mmc/mbdao/util/LocalStringUtil.class
 com/mmc/mbdao/mapper/BaseMapper.class
 com/mmc/mbdao/util/Constants.class
 com/mmc/mbdao/util/LocalObjectUtil.class
-com/mmc/mbdao/util/AutoMapper.class
 com/mmc/mbdao/Application.class
 com/mmc/mbdao/util/Constants$Num.class
 com/mmc/mbdao/dto/UserDto.class
