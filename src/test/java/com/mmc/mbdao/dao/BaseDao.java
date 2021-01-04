@@ -11,5 +11,5 @@ import java.util.Map;
 @Mapper
 public interface BaseDao<E extends BaseEntity> {
     @SelectProvider(type = BaseDaoProvider.class, method = "findByCondition")
-    List<E> findByCondition(Class clazz, Map<String, Object> map);
+    List<E> findByCondition();
 }

@@ -4,14 +4,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import java.io.Serializable;
 import java.util.Date;
 
 @MappedSuperclass
-public class BaseEntity {
+public class BaseEntity implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     private String name;
     private String note;
     private Long create_user;
@@ -19,14 +17,6 @@ public class BaseEntity {
     private String update_user;
     private Date update_time;
     private String is_del; //0 正常状态， 1 删除/隐藏状态
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

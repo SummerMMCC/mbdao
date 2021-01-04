@@ -1,5 +1,6 @@
 package com.mmc.mbdao.service;
 
+import com.alibaba.fastjson.JSON;
 import com.mmc.common.base.util.AutoMapper;
 import com.mmc.mbdao.Application;
 import com.mmc.mbdao.dao.BaseDao;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RunWith(SpringRunner.class)
@@ -32,9 +34,8 @@ public class UserService<E extends BaseEntity> {
 
     @Test
     public void findByCondition() {
-        Map m = new HashMap<String, Object>();
-        m.put("id = ", "1");
-        baseDao.findByCondition(UserEntity.class, m);
+        List<UserEntity> user = baseDao.findByCondition();
+        System.out.println(JSON.toJSONString(user));
     }
 
     @Test
